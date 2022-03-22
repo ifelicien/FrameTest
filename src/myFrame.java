@@ -2,13 +2,15 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
+import javax.swing.JLabel;
 import javax.swing.JTextField;
 
 
-public class myFrame extends JFrame implements ActionListener {
+public class myFrame extends JFrame implements ActionListener{
     someFunction idek = new someFunction();
     JButton button;
-    JLabel label;
+
+    JLabel label = new JLabel("this is my label");
 
     myFrame(){
         //set button param
@@ -26,7 +28,9 @@ public class myFrame extends JFrame implements ActionListener {
         this.setLayout(null);
         this.setSize(500,500);
         this.setVisible(true);
+        this.setBackground(new Color(123,50,250));
         this.add(button);
+        this.add(label);
     }
 
     //set button action
@@ -34,7 +38,7 @@ public class myFrame extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e){
         if (e.getSource() == button) {
             //System.out.println();
-            idek.myFunction();
+           // idek.myFunction();
             button.setEnabled(false);
         }
     }
