@@ -16,7 +16,7 @@ public class myFrame extends JFrame implements ActionListener {
     myFrame() {
         //set button param
         button = new JButton();
-        button.setBounds(100, 100, 100, 35);
+        button.setBounds(100, 300, 150, 150);
         button.addActionListener(this);
         button.setText("Button 1");
         button.setFocusable(false);
@@ -26,7 +26,7 @@ public class myFrame extends JFrame implements ActionListener {
 
         //set button param for button 2
         button2 = new JButton();
-        button2.setBounds(400, 100, 100, 35);
+        button2.setBounds(275, 300, 150, 150);
         button2.addActionListener(this);
         button2.setText("Button 2");
         button2.setFocusable(false);
