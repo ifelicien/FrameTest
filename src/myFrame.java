@@ -11,12 +11,13 @@ public class myFrame extends JFrame implements ActionListener {
     JButton button;
     JButton button2;
 
-    JLabel label = new JLabel("this is my label");
+    JLabel label;
+    JPanel panel;
 
     myFrame() {
-        //set button param
+        //set button parameters
         button = new JButton();
-        button.setBounds(100, 300, 150, 150);
+        button.setBounds(100, 150, 75, 35);
         button.addActionListener(this);
         button.setText("Button 1");
         button.setFocusable(false);
@@ -24,9 +25,9 @@ public class myFrame extends JFrame implements ActionListener {
         button.setIconTextGap(-15);
         button.setBorder(BorderFactory.createEtchedBorder());
 
-        //set button param for button 2
+        //set button parameters for button 2
         button2 = new JButton();
-        button2.setBounds(275, 300, 150, 150);
+        button2.setBounds(100, 200, 75, 35);
         button2.addActionListener(this);
         button2.setText("Button 2");
         button2.setFocusable(false);
@@ -34,12 +35,22 @@ public class myFrame extends JFrame implements ActionListener {
         button2.setIconTextGap(-15);
         button2.setBorder(BorderFactory.createEtchedBorder());
 
-        //set frame param
+        //set label parameters
+        label = new JLabel();
+        label.setText("My label");
+
+        //create panel for label
+        panel = new JPanel();
+        panel.add(label);
+
+
+        //set frame parameters
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(null);
         this.setSize(500, 500);
         this.setVisible(true);
         this.setBackground(new Color(123, 50, 250));
+        this.add(panel);
         this.add(button);
         this.add(button2);
         this.add(label);
