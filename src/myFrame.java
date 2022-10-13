@@ -29,7 +29,7 @@ public class myFrame extends JFrame implements ActionListener {
         button2 = new JButton();
         button2.setBounds(100, 200, 75, 35);
         button2.addActionListener(this);
-        button2.setText("Button 2");
+        button2.setText("Submit");
         button2.setFocusable(false);
         button2.setFont(new Font("Comic Sans", Font.BOLD, 12));
         button2.setIconTextGap(-15);
@@ -37,7 +37,7 @@ public class myFrame extends JFrame implements ActionListener {
 
         //set label parameters
         label = new JLabel();
-        label.setText("My label");
+        label.setText("Inventory Management");
 
         //create panel for label
         panel = new JPanel();
